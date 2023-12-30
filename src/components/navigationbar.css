@@ -1,0 +1,17 @@
+.navbar{
+    background-color: #000000;
+}
+.nav-link {
+    color: rgba(252,176,69,1) !important; 
+    font-weight: bold !important;/* Your desired color for nav items */
+  }
+  
+  .nav-link:not(.active):hover {
+    color:  rgba(253,29,29,1) !important; 
+    font-weight: bold !important/* Your desired hover color */
+  }
+  
+  .active {
+    color:  rgba(171,32,253,1) !important; /* Your desired active link color */
+    font-weight: bold !important; /* Makes the active link bold */
+  }

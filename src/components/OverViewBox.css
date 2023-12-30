@@ -1,0 +1,19 @@
+overview-box {
+    max-width: 400px; /* Adjust as needed */
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .carousel-indicators {
+ /* Semi-transparent background for caption */
+    color: white;
+    margin-bottom:5px;
+  }
+  .carousel-caption{
+    bottom:0px;
+    padding: 0px;
+    height:5%;
+  }
+  

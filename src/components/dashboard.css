@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle&display=swap');
+
+.wrapper {
+  height: 15vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: left;
+}
+.hispan{
+  font-size: 45px;
+  text-align: left;
+  background-image: linear-gradient(90deg, rgba(171,32,253,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+h3{
+  font-family: 'Rubik Doodle Shadow', cursive;
+}
+h5{
+  font-family: 'Rubik Doodle Shadow', cursive;
+  margin-left: 40%;
+  margin-right: 0px;
+}
+.code{
+  color:white;
+}
+
+.titlespan{
+  background-image: linear-gradient(90deg, rgba(171,32,253,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);/*linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(54,54,205,1) 35%, rgba(0,212,255,1) 100%);*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent */
+  display: inline-block; /* Needed to apply the gradient on inline elements like span or h1 */
+}
+.typing-demo {
+  width: 19ch;
+  animation: typing 2s steps(19), blink .8s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.65em;
+}
+.typing-demo1 {
+  width: 13ch;
+  animation: typing 2s steps(13), blink .8s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.65em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.containe{
+  margin-left: 0px;
+  margin-right: 0px;
+  width:100%;
+  padding:0;
+}
+.image{
+  margin-top: 10px;
+  margin-left: -25px;
+}
