@@ -15,3 +15,15 @@
     color:  rgba(171,32,253,1) !important; /* Your desired active link color */
     font-weight: bold !important; /* Makes the active link bold */
   }
+  .navbar-brand {
+    font-family: 'Your Font Family', sans-serif; /* Replace with your preferred font */
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #fff; /* Replace with your preferred color */
+    font-weight: bold;
+    /* Add more styling as needed */
+  }
+  .ml-auto{
+    display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  }

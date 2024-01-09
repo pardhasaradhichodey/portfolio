@@ -1,0 +1,17 @@
+/* dashboard.css or Footer.css */
+
+footer {
+    background-color: #333; /* Or any color you prefer */
+    color: #fff;
+  }
+  
+  footer a.text-light {
+    color: #fff;
+    margin: 0 10px; /* Adjust spacing around the icons */
+    transition: color 0.3s ease;
+  }
+  
+  footer a.text-light:hover {
+    color: #aaa; /* Color when hovering over the icons */
+  }
+  

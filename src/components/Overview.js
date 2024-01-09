@@ -1,24 +1,32 @@
 // OverviewBox.js
 
-import React from 'react';
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
-import './OverViewBox.css';
+import React from "react";
+import {
+  Carousel,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselItem,
+} from "reactstrap";
+import "./OverViewBox.css";
 
 const items = [
   {
-    src: 'https://github-readme-stats.vercel.app/api?username=pardhasaradhichodey&show_icons=true',
-    altText: 'GitHub Stats',
-    caption: ''
+    src: "https://github-readme-stats.vercel.app/api?username=pardhasaradhichodey&show_icons=true",
+    altText: "GitHub Stats",
+    caption: "",
+    href: "https://github.com/pardhasaradhichodey",
   },
   {
-    src: 'https://leetcard.jacoblin.cool/PardhuChodey?theme=light&font=Lexend',
-    altText: 'LeetCode Stats',
-    caption: ''
+    src: "https://leetcard.jacoblin.cool/PardhuChodey?theme=light&font=Lexend",
+    altText: "LeetCode Stats",
+    caption: "",
+    href: "https://leetcode.com/PardhuChodey/",
   },
   {
-    src:process.env.PUBLIC_URL +'/Micheal.png',
-    altText: 'Recommendations'
-  }
+    src: process.env.PUBLIC_URL + "/micheal.png",
+    altText: "Recommendations",
+    href: "https://www.linkedin.com/in/pardhasaradhichodey/details/recommendations/?detailScreenTabIndex=0",
+  },
 ];
 
 const OverviewBox = () => {
@@ -48,12 +56,15 @@ const OverviewBox = () => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
-        style={{height:'80%',alignItems:'center'}}
+        style={{ height: "80%", alignItems: "center" }}
       >
-        <img src={item.src} alt={item.altText} style={{ paddingLeft:'10%', width: '90%', height: '150px' }} />
-        {/*<div className="carousel-caption d-none d-md-block">
-          <p>{item.caption}</p>
-    </div>*/}
+        <a href={item.href} target="_blank" rel="noreferrer">
+          <img
+            src={item.src}
+            alt={item.altText}
+            style={{ paddingLeft: "10%", width: "90%", height: "150px" }}
+          />
+        </a>
       </CarouselItem>
     );
   });
@@ -64,12 +75,25 @@ const OverviewBox = () => {
         activeIndex={activeIndex}
         next={next}
         previous={previous}
-        style={{width:'100%'}}
+        style={{ width: "100%" }}
       >
-        <CarouselIndicators className='carousel-caption' items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        <CarouselIndicators
+          className="carousel-caption"
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
       </Carousel>
     </div>
   );

@@ -1,0 +1,8 @@
+h1{
+    font-family: 'Rubik Doodle Shadow', cursive;
+    background-image: linear-gradient(90deg, rgba(171,32,253,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);/*linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(54,54,205,1) 35%, rgba(0,212,255,1) 100%);*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent */
+  display: inline-block;
+  }

@@ -1,16 +1,17 @@
-import React, {useEffect, useState} from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Particles, {initParticlesEngine} from "@tsparticles/react";
-import {loadFull} from "tsparticles";
+import React, { useEffect, useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { loadFull } from "tsparticles";
 import "./App.css";
-import particlesOptions from "./particles.json";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavigationBar from './components/NavigationBar';
-import Dashboard from './components/Dashboard';
 import About from './components/About';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
 import ContactUs from './components/ContactUs';
+import Dashboard from './components/Dashboard';
+import Experience from './components/Experience';
+import NavigationBar from './components/NavigationBar';
+import Projects from './components/Projects';
+import particlesOptions from "./particles.json";
+import Sidebar from "./components/Sider";
 
 function App() {
     const [init, setInit] = useState(false);
@@ -41,7 +42,9 @@ function App() {
         <Route exact path="portfolio/contact" element={<ContactUs />} />
       </Routes>
       </div>
+      
     </Router>
+    <Sidebar/>
         </div>
     );
 }

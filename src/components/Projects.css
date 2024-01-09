@@ -1,0 +1,13 @@
+/* Add this to your CSS file */
+
+/* Style for the project cards and tabs */
+.card {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-link.active {
+    color: #fff !important;
+    background: linear-gradient(90deg, rgba(171,32,253,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 5px;
+  }
+  

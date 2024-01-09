@@ -1,7 +1,7 @@
 // src/components/About.js
 
 import React from "react";
-
+import './About.css';
 const About = () => {
     console.log('about');
   return (
