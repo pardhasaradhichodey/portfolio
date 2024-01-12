@@ -4,7 +4,13 @@
 .card {
     margin-bottom: 1rem;
   }
-  
+  .projectcard{
+    height: 200px;
+    width:28vw;
+  }
+  h5{
+    margin-left: 0%;
+  }
   .nav-link.active {
     color: #fff !important;
     background: linear-gradient(90deg, rgba(171,32,253,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
